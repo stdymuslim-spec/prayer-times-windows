@@ -1,7 +1,7 @@
 # Prayer Times for Windows
 
 A tiny system tray app for Singapore's daily prayer times. It counts down to the next prayer and notifies you
-10 minutes before and at each prayer time. This is the Windows version of Prayer Times for Mac.
+10 minutes before and at each prayer time. This is the Windows version of [Prayer Times for Mac](https://github.com/stdymuslim-spec/prayer-times-mac).
 
 - **Tray countdown:** hover over the moon icon to see the next prayer, for example `Asar in 1h 12m`. Click it for
   today's full timetable.
