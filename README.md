@@ -20,9 +20,17 @@ Syuruk (sunrise) is shown in the timetable but doesn't trigger notifications. Cl
 
 ## Requirements
 
-- Windows 10 or 11. Nothing to install: the app is compiled with the C# compiler that comes with Windows.
+- Windows 10 or 11. Nothing to install: the download is ready to run, and building from source uses the C# compiler
+  that comes with Windows.
 
-## Install
+## Download
+
+Get **`PrayerTimes-Windows.zip`** from the [latest release](https://github.com/stdymuslim-spec/prayer-times-windows/releases/latest),
+extract it, and double-click **`PrayerTimes.exe`**. Keep the folder where it is: the app reads the timetable and
+sounds from next to the exe. Windows may warn about an unknown publisher because the app isn't code-signed. Choose
+**More info**, then **Run anyway**.
+
+## Build from source
 
 1. Download this folder (Code → Download ZIP, then extract it).
 2. Double-click **`build.bat`**.
