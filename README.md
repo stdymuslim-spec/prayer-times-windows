@@ -3,6 +3,10 @@
 A tiny system tray app for Singapore's daily prayer times. It counts down to the next prayer and notifies you
 10 minutes before and at each prayer time. This is the Windows version of [Prayer Times for Mac](https://github.com/stdymuslim-spec/prayer-times-mac).
 
+<p align="center">
+  <img src="docs/screenshot.png" alt="Prayer Times tray menu showing today's timetable, with Maghrib as the next prayer" width="316">
+</p>
+
 - **Tray countdown:** hover over the moon icon to see the next prayer, for example `Asar in 1h 12m`. Click it for
   today's full timetable.
 - **Two notifications per prayer** for Subuh, Zohor, Asar, Maghrib and Isyak:
@@ -74,6 +78,7 @@ To add a new year:
 | Path | What it is |
 |---|---|
 | `src\PrayerTimes.cs` | The whole app |
+| `docs\screenshot.png` | The screenshot in this README |
 | `Resources\timetable.json` | Prayer times by date (Singapore time) |
 | `Resources\*.mp3` | The two notification sounds (replaceable) |
 | `tools\parse_timetable.py` | Converts a yearly timetable PDF to JSON |
