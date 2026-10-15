@@ -1,4 +1,1 @@
 build/
-
-# Notification sounds are not distributed with the source (see README); add your own here.
-Resources/*.mp3

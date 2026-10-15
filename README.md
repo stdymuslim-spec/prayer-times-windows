@@ -10,7 +10,7 @@ A tiny system tray app for Singapore's daily prayer times. It counts down to the
   - **"It's time for Asar."**, with the call to prayer
 - **Silent mode** for pop-ups without sound, and **Pause** to stop notifications completely.
 - **Starts at login** automatically. You can turn that off from the menu.
-- **Lightweight:** under 100 KB plus sounds, no windows, no network access, and no data collected.
+- **Lightweight:** under 100 KB plus the two sound files, no windows, no network access, and no data collected.
 
 Syuruk (sunrise) is shown in the timetable but doesn't trigger notifications. Clicking a notification stops its sound.
 
@@ -48,8 +48,9 @@ To add a new year:
 
 ## Customising
 
-- **Sounds:** put your own `reminder.mp3` (10-minute chime) and `call_to_prayer.mp3` in `Resources\`, then run
-  `build.bat`. They are ignored by Git. Without them the app uses built-in Windows sounds.
+- **Sounds:** the app comes with a short chime (`reminder.mp3`) and a call to prayer (`call_to_prayer.mp3`). To use
+  your own, replace those two files in `Resources\` with your own mp3s of the same names, then run `build.bat`.
+  Keep each file short. If a file is missing, the app uses a built-in Windows sound instead.
 - **Other cities:** replace `Resources\timetable.json` with your own times in the same format, change
   `"Singapore Standard Time"` in `src\PrayerTimes.cs` to your Windows time zone ID, and rebuild.
 
@@ -74,9 +75,16 @@ To add a new year:
 |---|---|
 | `src\PrayerTimes.cs` | The whole app |
 | `Resources\timetable.json` | Prayer times by date (Singapore time) |
-| `Resources\*.mp3` | Your own notification sounds (optional, not in the repository) |
+| `Resources\*.mp3` | The two notification sounds (replaceable) |
 | `tools\parse_timetable.py` | Converts a yearly timetable PDF to JSON |
 | `build.ps1` / `build.bat` | Builds, installs and launches the app |
+
+## Credits
+
+- **Reminder sound:** "Notification 11" by soundreality on [Pixabay](https://pixabay.com/).
+- **Call to prayer:** from [Zedge](https://www.zedge.net/).
+
+The sound files belong to their creators and aren't covered by this project's license.
 
 ## License
 
